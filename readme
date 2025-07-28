@@ -1,0 +1,33 @@
+# 🧪 Trello UI Automation Test with Playwright
+
+This project automates a comprehensive UI test scenario on [Trello](https://trello.com) using **Playwright** and **TypeScript**. It creates a new board, adds lists and cards, labels and attaches a PDF, moves a card between lists, and validates all steps along the way.
+
+---
+
+## 🚀 What This Test Does
+
+1. **Logs in** to Trello using credentials stored in environment variables.
+2. **Creates a board** named `QA Scrum Board - SS - <timestamp>`.
+3. **Creates 3 lists**: `To Do`, `In Progress`, and `Done`.
+4. **Adds a card** to each list.
+5. Adds a **description** and a **green label** to the "To Do Card".
+6. **Attaches a PDF** file (`test-document.pdf`) to the "To Do Card".
+7. **Drags and drops the card** from "To Do" → "In Progress" → "Done", verifying the move.
+8. Produces a **Playwright HTML report**.
+
+---
+
+## 📦 Project Setup
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
+
+#install dependencies
+npm install
+npx playwright install
+ 
+ #to run the test
+ npx playwright test tests/example.spec.ts
