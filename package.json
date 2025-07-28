@@ -10,6 +10,7 @@
   "devDependencies": {
     "@playwright/test": "^1.54.1",
     "@types/node": "^22.15.21",
+    "allure-playwright": "^3.3.2",
     "dotenv": "^17.2.1"
   }
 }

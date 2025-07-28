@@ -17,6 +17,7 @@ const {
     list,
     listOfCards,
   },
+  urls: { trelloLogin },
 } = values;
 
 const timestamp = Date.now();
@@ -32,7 +33,7 @@ async function uploadFile(page, filePath) {
 
 test("Trello UI Automation", async ({ page }) => {
   // Login
-  await page.goto("https://trello.com/login");
+  await page.goto(trelloLogin);
   await page.locator(email).fill(process.env.TRELLO_EMAIL || "");
   await page.getByRole("button", { name: "Continue" }).click();
   await page.locator(password).fill(process.env.TRELLO_PASSWORD || "");

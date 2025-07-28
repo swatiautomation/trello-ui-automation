@@ -1,4 +1,4 @@
-import { defineConfig, devices } from "@playwright/test";
+import { defineConfig } from "@playwright/test";
 export default defineConfig({
   timeout: 60000,
   use: {
@@ -7,5 +7,5 @@ export default defineConfig({
     screenshot: "only-on-failure",
     video: "retain-on-failure",
   },
-  reporter: [["html", { open: "never" }]],
+  reporter: [["html", { open: "never" }], ["allure-playwright"]],
 });

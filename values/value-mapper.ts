@@ -14,4 +14,8 @@ export const values = {
     list: '[data-testid="list"]',
     listOfCards: '[data-testid="list-cards"]',
   },
+
+  urls: {
+    trelloLogin: "https://trello.com/login",
+  },
 };
