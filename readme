@@ -30,4 +30,4 @@ npm install
 npx playwright install
  
  #to run the test
- npx playwright test tests/example.spec.ts
+ npx playwright test tests/trelloUITest.spec.ts
