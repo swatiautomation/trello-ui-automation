@@ -1,6 +1,7 @@
 import { defineConfig } from "@playwright/test";
 export default defineConfig({
   timeout: 60000,
+  testDir: "tests",
   use: {
     headless: false,
     baseURL: "https://trello.com",
