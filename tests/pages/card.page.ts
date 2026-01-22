@@ -25,6 +25,8 @@ export class CardPage {
     await this.page
       .locator(`//button[@aria-label='Add card in ${listName}']`)
       .click();
+      await this.page.locator(`//div[@data-testid='list-cards']`).hover();
+      await this.page.locator(`//a[@data-testid='card-name']:has-text('${cardTitle}')`).click();
   }
 
   async addDescriptionAndLabel(cardTitle: string) {

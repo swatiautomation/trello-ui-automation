@@ -13,6 +13,8 @@ export const values = {
     toDoCard: 'a[data-testid="card-name"]:has-text("To Do Card")',
     list: '[data-testid="list"]',
     listOfCards: '[data-testid="list-cards"]',
+    completeCard: 'a[data-testid="card-name"]:has-text("Complete Card")',
+    
   },
 
   urls: {
